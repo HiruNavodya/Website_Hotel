@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   
+   <link href="images/a.jpg" rel="icon" type="image/png">
+   <title>JAURIM HOTEL</title>
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style2.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+   
+   <div class="flex">
+      <marquee direction="right"><a href="#home" class="logo" name = "top" ><font size="35px" type "Arial">JAURIM  HOTEL</font></a></marquee>
+      <img src="images/1.png" alt="Girl in a jacket" style="width:150px;height:150px;" class="logo"/> 
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </div>
+  
+   <nav class="navbar">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT US</a>
+      <a href="index2.php">RESERVATION</a>
+      <a href="index3.html">GALLERY</a>
+      <a href="index5.php">CONTACT DETAILS</a>
+      <a href="index3.html">FAQ</a>
+      <a href="index4.html">REVIEWS</a>
+	<a href="Job.php">JOB VACANCIES</a>
+   </nav>
+
+</section>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="box swiper-slide">
+
+		
+            <img src="images/home-img-8.jpg" alt="">
+            <div class="flex">
+               <h3>luxurious rooms</h3>
+               <a href="index2.php" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpg" alt="">
+            <div class="flex">
+               <h3>foods and drinks</h3>
+               <a href="index2.php" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-5.jpg" alt="">
+            <div class="flex">
+               <h3>Wedding Halls</h3>
+               <a href="index2.php" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-6.jpg" alt="">
+            <div class="flex">
+               <h3>Meeting & Function Rooms</h3>
+               <a href="index2.php" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-7.jpg" alt="">
+            <div class="flex">
+               <h3>Free Open Area</h3>
+               <a href="index2.php" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-10.jpg" alt="">
+            <div class="flex">
+               <h3>Sun Set Bar</h3>
+               <a href="index2.php" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-9.jpg" alt="">
+            <div class="flex">
+               <h3>Gym Facilities</h3>
+               <a href="index2.php" class="btn">make a reservation</a>
+            </div>
+         </div>
+
+         <div class="box swiper-slide">
+            <img src="images/home-img-11.jpg" alt="">
+            <div class="flex">
+               <h3>Swimming Pool</h3>
+               <a href="index5.php" class="btn">contact us</a>
+            </div>
+         </div>
+      </div>
+
+      
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+<BR/><BR/>
+
+
+<!-- about section starts  -->
+<BR/><BR/>
+<section class="about" id="about">
+
+<style>
+.grow img{
+transition: 1s ease;
+}
+
+.grow img:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+transition: 1s ease;
+}
+
+
+/*Category items*/
+  .category{
+      min-height: 650px;
+      text-align: center;
+      padding-top: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .category h1{
+    font-size: 40px;
+    color: white;
+  }
+
+  .category p{
+    font-size: 17px;
+    color: rgb(232, 233, 233);
+  }
+
+  .c_raw{
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .cate1{
+    
+      flex-basis: 400px;
+      background: white;
+      border-radius: 5px;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding: -2px 0px;
+      /*box-sizing: border-box;*/
+      align-content: center;
+      position: relative;
+  }
+  .cate1 h3{
+      text-align: center;
+  }
+
+  .cate1 img{
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+      transition: all 0.5s;
+    
+      
+  }
+
+  .content{
+      background:#3D3D3D;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 60%;
+      z-index: -1;
+      transition: all 0.5s ease 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+      
+  }
+  .cate1 img:hover{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    
+  }
+  .cate1:focus .content,
+  .cate1:focus-within .content,
+  .cate1:hover .content{
+      visibility: visible;
+      z-index: 1;
+    top: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    transition-delay: 0s, 0s, 0.3s;
+  }
+
+  .cate1:hover .content set{
+      top:100%;
+  }
+
+  .ctitle{
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background:rgba(0,0,0,0.4);
+      z-index: -1;
+      transition: all 0.5s;
+  }
+
+  .ctitle h3{
+      text-align: center;
+      margin-top: 50%;
+      color: white;
+      
+  }
+
+  .cate1:hover .ctitle{
+    z-index: 1;
+  }
+
+  .content p{
+      padding: 10px 15px;
+  }
+
+  .content button{
+      background: rgb(189, 48, 48);
+      width: 100px;
+      height: auto;
+      border-radius: 3px;
+      margin: 0;
+      padding: 9px 10px;
+      border: none;
+      
+
+  }
+
+  .content button a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+  }
+
+
+  .content hr{
+      position: relative;
+      left: 20%;
+      margin: 10px 0px;
+      width: 60%;
+      color: white;
+      
+  }
+</style>
+
+<section class="category">
+   <h1>WELCOME TO JAURIM</h1><BR/>
+   <p>STYLISH ELEGANCE IN THE VERY HEART OF SEOUL</p>
+
+   <div class="c_raw">
+       <div class="cate1">
+           <div class="ctitle">
+                  <h3>ABOUT US</h3>
+              </div>
+              <div class="grow">
+               <img src="images/about-img-4.jpg">
+           </div>
+           <div class="content">
+               
+               <p>ABOUT US --- A Fascinating Hotel located in the heart of Seoul – South Korea.Established in 1998,...</p>
+               <hr>
+               <button><a href="home_about.html">See More</a></button>
+           </div>  
+       </div>
+
+       <div class="cate1">
+        <div class="ctitle">
+            <h3>AWARDS</h3>
+        </div>
+        <div class="grow">
+        <img src="images/Capture.JPG">
+        </div>
+        <div class="content">
+           <p>AWARDS --- Cvent Most Popular Meeting Resorts (2015).</p>
+           <hr>
+           <button><a href="home_awards.html">See More</a></button>
+        </div>
+       </div>
+
+       <div class="cate1">
+        <div class="ctitle">
+            <h3>BEST STAFF</h3>
+        </div>
+        <div class="grow">
+        <img src="images/about-img-1.jpg"">
+        </div>
+        <div class="content">
+           <p>BEST STAFF --- At the Jaurim Hotel, our friendly and attentive service stems from a personalized approach...</p>
+           <hr>
+           <button><a href="home_beststaff.html">See More</a></button>
+        </div>
+       </div>
+
+      <div class="cate1">
+        <div class="ctitle">
+            <h3>BEST FOODS</h3>
+        </div>
+        <div class="grow">
+        <img src="images/about-img-2.jpg">
+        </div>
+        <div class="content">
+          <p>BEST FOODS --- The menu is live-fire based with a continual focus on being local, fresh, and seasonal. Included are a few of the highly popular items from the Jaurim menu..</p>
+          <hr>
+          <button><a href="home_foods.html">See More</a></button>
+        </div>
+      </div>
+
+
+   </div>
+   <br /><br /><br /><br /><br />
+   <br /><br /><br /><br /><br />
+   <br /><br /><br /><br /><br />
+   <br /><br /><br /><br /><br />
+   <br /><br /><br /><br /><br />
+   <br /><br /><br /><br /><br />
+   <h1>OUR SERVICES</h1><BR/>
+
+</section>
+
+
+
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services">
+
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="grow">
+         <img src="images/icon-1.png" alt="">
+         </div>
+         <h3>Food & Drinks</h3>
+
+      </div>
+
+      <div class="box">
+         <div class="grow">
+         <img src="images/icon-2.png" alt="">
+         </div>
+         <h3>Outdoor Dining</h3>
+
+      </div>
+
+      <div class="box">
+         <div class="grow">
+         <img src="images/icon-9.png" alt="">
+         </div>
+         <h3>Weddings</h3>
+
+      </div>
+
+      <div class="box">
+         <div class="grow">
+         <img src="images/icon-4.png" alt="">
+         </div>
+         <h3>Decorations</h3>
+
+      </div>
+
+   
+      <div class="box">
+         <div class="grow">
+         <img src="images/icon-5.png" alt="">
+         </div>
+         <h3>Swimming Pool</h3>
+
+      </div>
+      
+      <div class="box">
+         <div class="grow">
+         <img src="images/icon-7.png" alt="">
+         </div>
+         <h3>Fitness Center</h3>
+
+      </div>
+
+      <div class="box">
+         <div class="grow">
+         <img src="images/icon-6.png" alt="">
+         </div>
+         <h3>Resort Beach</h3>
+
+      </div>
+
+      <div class="box">
+         <div class="grow">
+         <img src="images/icon-3.png" alt="">
+         </div>
+         <h3> Beach View</h3>
+
+      </div>
+
+   </div>
+   <BR/>   <BR/>   <BR/>
+   <H1><a href="#home">TOP</a></H1>
+</section>
+
+<!-- services section ends -->
+<br /><br /><br /><br /><br />
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i> +02-312-3456</a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i>  +82-2-312-3456</a>
+         <a href="mailto:shakhanas@gmail.com"><i class="fas fa-envelope"></i> jaurim@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> SEoul, South Korea - 100-011</a>
+      </div>
+
+      <div class="box">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT US</a>
+      <a href="index2.php">RESERVATION</a>
+      <a href="index3.html">GALLERY</a>
+      <a href="index5.php">CONTACT DETAILS</a>
+      <a href="index3.html">FAQ</a>
+      <a href="index4.html">REVIEWS</a>
+	<a href="Job.php">JOB VACANCIES</a>
+      </div>
+
+
+
+      <div class="box">
+         <a href="https://www.facebook.com/campaign/landing.php?campaign_id=1635645263&extra_1=s%7Cc%7C313630695579%7Ce%7Cfacebook%27%7C&placement=&creative=313630695579&keyword=facebook%27&partner_id=googlesem&extra_2=campaignid%3D1635645263%26adgroupid%3D67924240452%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-362360550869%26loc_physical_ms%3D1009919%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIz62Y6IyR-wIVwUcrCh2l-AxkEAAYASAAEgLC7fD_BwE">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="https://twitter.com/i/flow/login">twitter <i class="fab fa-twitter"></i></a>
+         <a href="https://www.instagram.com/accounts/login/">instagram <i class="fab fa-instagram"></i></a>
+         <a href="https://www.linkedin.com/login">linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">&copy; copyright @ 2022 by s15680 | all rights reseved!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
